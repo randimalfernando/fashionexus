@@ -30,4 +30,5 @@ if (isset($_SESSION['cart'])) {
 <?php include_once("../components/footer.php"); ?>
 
 </body>
+
 </html>

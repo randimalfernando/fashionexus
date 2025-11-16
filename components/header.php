@@ -46,3 +46,4 @@ if (!empty($_SESSION['cart'])) {
         <span class="bar"></span>
     </div>
 </header>
+

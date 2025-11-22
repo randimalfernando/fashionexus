@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="25" assertions="55" errors="0" warnings="0" failures="0" skipped="0" time="0.125160">
+    <testsuite name="Unit" tests="25" assertions="55" errors="0" warnings="0" failures="0" skipped="0" time="0.125160">
+      <testsuite name="AddProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddProductTest.php" tests="3" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.030016">
+        <testcase name="testAddProductSuccess" class="AddProductTest" classname="AddProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddProductTest.php" line="27" assertions="3" time="0.010148"/>
+        <testcase name="testAddProductFailsWithoutImage" class="AddProductTest" classname="AddProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddProductTest.php" line="52" assertions="2" time="0.003271"/>
+        <testcase name="testAddProductFailsWithInvalidPrice" class="AddProductTest" classname="AddProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddProductTest.php" line="67" assertions="2" time="0.016597"/>
+      </testsuite>
+      <testsuite name="AddUserMessageTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddUserMessageTest.php" tests="4" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.037703">
+        <testcase name="testAddMessageSuccess" class="AddUserMessageTest" classname="AddUserMessageTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddUserMessageTest.php" line="27" assertions="3" time="0.022423"/>
+        <testcase name="testInvalidEmailFails" class="AddUserMessageTest" classname="AddUserMessageTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddUserMessageTest.php" line="52" assertions="2" time="0.002576"/>
+        <testcase name="testMissingFieldsFail" class="AddUserMessageTest" classname="AddUserMessageTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddUserMessageTest.php" line="67" assertions="2" time="0.011433"/>
+        <testcase name="testInvalidContactNumberFails" class="AddUserMessageTest" classname="AddUserMessageTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\AddUserMessageTest.php" line="82" assertions="2" time="0.001271"/>
+      </testsuite>
+      <testsuite name="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" tests="6" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.001228">
+        <testcase name="testAddToCartCreatesItem" class="CartTest" classname="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" line="8" assertions="3" time="0.000456"/>
+        <testcase name="testAddToCartIncreasesQtyIfSameProduct" class="CartTest" classname="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" line="26" assertions="1" time="0.000081"/>
+        <testcase name="testRemoveFromCart" class="CartTest" classname="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" line="43" assertions="1" time="0.000114"/>
+        <testcase name="testClearCart" class="CartTest" classname="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" line="54" assertions="1" time="0.000415"/>
+        <testcase name="testIncreaseQuantity" class="CartTest" classname="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" line="66" assertions="1" time="0.000091"/>
+        <testcase name="testDecreaseQuantityRemovesWhenQtyBecomesZero" class="CartTest" classname="CartTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\CartTest.php" line="77" assertions="1" time="0.000070"/>
+      </testsuite>
+      <testsuite name="DeleteProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\DeleteProductTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.005449">
+        <testcase name="testDeleteProductSuccess" class="DeleteProductTest" classname="DeleteProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\DeleteProductTest.php" line="37" assertions="3" time="0.004117"/>
+        <testcase name="testDeleteFailsIfProductNotFound" class="DeleteProductTest" classname="DeleteProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\DeleteProductTest.php" line="50" assertions="2" time="0.001331"/>
+      </testsuite>
+      <testsuite name="LoginTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\LoginTest.php" tests="4" assertions="11" errors="0" warnings="0" failures="0" skipped="0" time="0.028581">
+        <testcase name="testAdminLoginSuccess" class="LoginTest" classname="LoginTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\LoginTest.php" line="38" assertions="3" time="0.002681"/>
+        <testcase name="testUserLoginSuccess" class="LoginTest" classname="LoginTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\LoginTest.php" line="54" assertions="3" time="0.003950"/>
+        <testcase name="testWrongPasswordFails" class="LoginTest" classname="LoginTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\LoginTest.php" line="70" assertions="3" time="0.004550"/>
+        <testcase name="testUnknownEmailFails" class="LoginTest" classname="LoginTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\LoginTest.php" line="86" assertions="2" time="0.017400"/>
+      </testsuite>
+      <testsuite name="RegisterFormTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\RegistrationFormTest.php" tests="3" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.008466">
+        <testcase name="testRegisterSuccess" class="RegisterFormTest" classname="RegisterFormTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\RegistrationFormTest.php" line="28" assertions="3" time="0.002848"/>
+        <testcase name="testPasswordMismatchFails" class="RegisterFormTest" classname="RegisterFormTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\RegistrationFormTest.php" line="48" assertions="2" time="0.002626"/>
+        <testcase name="testDuplicateUserFails" class="RegisterFormTest" classname="RegisterFormTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\RegistrationFormTest.php" line="64" assertions="2" time="0.002991"/>
+      </testsuite>
+      <testsuite name="UpdateProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\UpdateProductTest.php" tests="3" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.013717">
+        <testcase name="testUpdateKeepsOldImageWhenNoNewImage" class="UpdateProductTest" classname="UpdateProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\UpdateProductTest.php" line="36" assertions="4" time="0.003907"/>
+        <testcase name="testUpdateReplacesImageWhenNewImageGiven" class="UpdateProductTest" classname="UpdateProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\UpdateProductTest.php" line="60" assertions="2" time="0.006015"/>
+        <testcase name="testUpdateFailsWithInvalidPrice" class="UpdateProductTest" classname="UpdateProductTest" file="C:\xampp\htdocs\FashioNexus\tests\unit\UpdateProductTest.php" line="88" assertions="2" time="0.003795"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
